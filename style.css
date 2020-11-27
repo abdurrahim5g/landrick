@@ -1,0 +1,787 @@
+/* -------------------------------
+Theme Name: office site
+Theme URI: http://ooo.com/
+Description: This tamplate make with manage office
+Author: Abdur Rahim
+Author URI: https://www.facebook.com/FreelancerRahim26
+Tags:  Os
+Version: 1.0
+
+
+Table Content:
+----------------------------------------
+    1.  Typrography
+    2.  header area
+    3.  hero area
+    4.  about area
+    5.  portfolio area
+    6.  work area
+    7.  testmonial area
+    8.  client area
+    9.  news area
+    10.  contact area
+    11.  footer area
+----------------------------------------*/
+
+/* 1. Typrography 
+---------------------------------------------*/
+
+@font-face {
+    font-family: 'gotham bold';
+    src: url(fonts/GothamRoundedBold_21016.woff);
+}
+
+@font-face {
+    font-family: 'gotham book';
+    src: url(fonts/GothamRoundedBook_21018.woff);
+}
+
+@font-face {
+    font-family: "gotham medium";
+    src: url(fonts/GothamRoundedMedium_21022.woff);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+    font-family: 'gotham book', sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+p {
+    color: #8492a6;
+    line-height: 1.6;
+    font-family: 'gotham book', sans-serif;
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'gotham bold' sans-serif;
+    font-weight: 700;
+    color: #233148;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+iframe {
+    vertical-align: middle;
+}
+
+
+/*  2. header area start 
+--------------------------------------------------*/
+header.header-area .row {
+    align-items: center;
+}
+
+header.header-area {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.main-menu> ul> li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu> ul> li> a {
+    display: block;
+    padding: 20px;
+    text-transform: capitalize;
+    color: #3C4858;
+    font-weight: 700;
+    /* background: #f9f9f9; */
+}
+
+.main-menu>ul {
+    text-align: center;
+}
+
+.main-menu>ul>li:nth-child(2)>ul {
+    position: absolute;
+    width: 500px;
+    background: #ffffff;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    z-index: 9;
+    left: 0;
+    top: 100%;
+}
+
+.main-menu> ul> li>ul>li {
+    flex: 0 0 33.33333333333%;
+    max-width: 33.333333333%;
+    text-align: left;
+}
+
+.main-menu a {
+    color: #7b7f86;
+}
+
+.main-menu>ul>li:nth-child(2)>ul::before {content: '';position: absolute;top: -7px;left: 35px;box-shadow: -2px -2px 2px 0px #d4d4d4;transform: rotate(45deg);border: 7px solid red;border-color: white transparent transparent white;}
+
+.main-menu> ul> li>ul>li>ul>li>a {
+    display: block;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.main-menu>ul>li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main-menu>ul>li>ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    transform: translateY(55px);
+}
+
+.main-menu a:hover {
+    color: #3755d0;
+}
+
+.main-menu>ul>li>ul>li>ul>li:hover a {
+    padding-left: 20px;
+}
+
+.main-menu>ul>li>ul li {
+    transition: .3s;
+}
+
+.button {
+    display: inline-block;
+    background: #2F55D4;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #123bc3;
+    color: #fff;
+}
+
+.bye {
+    text-align: right;
+}
+
+/*  2. header area end  --------------------------*/
+
+
+
+/*  3. hero area start 
+--------------------------------------------------*/
+.hero-content {
+    max-width: 700px;
+    padding: 78px 0 0 0;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 50px 0;
+}
+
+.hero-content li {
+    display: inline-block;
+}
+
+.hero-content li a i {
+    margin: 0 10px 0 0;
+}
+
+.hero-content li:first-child {
+    margin: 0 10px 0 0;
+}
+
+.hero-content li:last-child a {
+    background: transparent;
+    color: #2f55d4;
+}
+
+.hero-content a {
+    border: 1px solid #2f55d4;
+}
+
+.hero-content li:last-child a:hover {
+    background: #123bc3;
+    color: #fff;
+}
+
+section.hero-area {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #F8F9FC url(img/bg01.png) no-repeat center / cover;
+}
+
+/*  3. hero area end  --------------------------*/
+
+
+
+/*  4. about area start 
+--------------------------------------------------*/
+section.about-area {
+    padding: 80px 0;
+}
+
+.about-content h2 {
+    text-transform: capitalize;
+}
+
+.about-content h5 {
+    color: #2f55d4;
+    margin: 10px  0 20px;
+}
+
+.about-content p {
+    padding: 0 6% 0 0;
+    margin: 0 0 35px;
+}
+
+.about-content a i {
+    transform: rotate(90deg);
+    margin: 0 11px 0 0;
+}
+
+.progress-box .progress {
+    height: 10px;
+    border-radius: 30px;
+    overflow: visible !important;
+}
+
+.progress-box {
+    margin: 0 0 20px;
+}
+
+.progress-box .progress .progress-bar {
+    border-radius: 30px;
+    position: relative;
+    overflow: visible !important;
+}
+
+.progress-box .progress .progress-bar span {
+    position: absolute;
+    right: -15px;
+    color: #0f3b71b3;
+    top: -14px;
+    z-index: 999;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.progress-box h5 {
+    color: #57759b;
+}
+
+section.about-area .row {
+    align-items: center;
+}
+/*  4. about area end  --------------------------*/
+
+
+
+/*  5. portfolio area start 
+--------------------------------------------------*/
+.heading {
+    margin: 0 0 60px;
+}
+
+.heading h2 {
+    text-transform: capitalize;
+}
+
+.heading p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 40px 0 0 0;
+}
+
+.portfolio-box {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 30px;
+}
+
+.portfolio-box .block-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #010215a8;
+    justify-content: flex-end;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.block-box h5, .block-box h6, .block-box a {
+    color: #fff;
+    margin: 3px;
+    text-transform: capitalize;
+}
+
+.block-box a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #2f55d4;
+}
+
+.block-box a:hover {
+    background: #2f55d4;
+    color: #fff;
+}
+
+.portfolio-box:hover .block-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.portfolio-box img {
+    transition: .5s;
+}
+
+.see-more i {
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+}
+
+.see-more a {
+    border: 1px solid #2f55d4;
+}
+
+.see-more a:hover {
+    background: transparent;
+    color: #2f55d4;
+}
+/*  5. portfolio area end  --------------------------*/
+
+
+
+/*  6. work area start 
+--------------------------------------------------*/
+section.work-area {
+    padding: 100px 0;
+}
+
+.work-item {
+    border: 1px solid #F4F4F4;
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: .3s;
+    margin: 5px 0 0 0;
+}
+
+.work-item p {
+    font-size: 16px;
+    margin: 25px 0;
+}
+
+.work-item a {
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.work-item a i {
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    transition: .3s;
+}
+
+.work-item a:hover i {
+    margin: 0 0 0 15px;
+}
+
+.work-item h4 {
+    text-transform: capitalize;
+}
+
+.work-item h3 {
+    font-size: 40px;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+
+.work-item h3 i {
+    float: right;
+}
+
+.work-item:hover {
+    margin: 0;
+    border-bottom: 5px solid #2f55d4;
+}
+/*  6. work area end  --------------------------*/
+
+
+
+/*  7. testmonial area start 
+--------------------------------------------------*/
+section.testmonial-area {
+    background: url(img/bg02.jpg);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testmonial-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.testmonial-content p {
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+}
+
+.testmonial-content h5 {
+    color: #fff;
+}
+
+.testmonial-content .rating li {
+    color: #f9c817;
+    display: inline-block;
+}
+
+.testmonial-content h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.testmonial-content img {
+    width: 100px !important;
+    height: 100px;
+    object-fit: cover;
+    margin: 20px auto 0;
+    border-radius: 50%;
+}
+
+.testmonial-content .owl-dots {
+    margin: 40px 0 0 0;
+}
+
+.testmonial-content .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    background: #2f55d4 !important;
+    margin: 0 4px;
+    transition: .3s;
+    outline: none;
+    border-radius: 4px;
+}
+
+.testmonial-content .owl-dots .owl-dot.active {
+    transform: rotate(45deg);
+}
+
+.single-item {
+    cursor: e-resize;
+}
+/*  7. testmonial area end  --------------------------*/
+
+
+/*  8. client area start 
+--------------------------------------------------*/
+section.client-area {
+    padding: 50px 0;
+    border-bottom: 1px solid #E9ECEF;
+}
+
+section.client-area .client-logo {
+    width: 16.6666666667%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+section.client-area .client-logo img {
+    max-width: 100px;
+}
+/*  8. client area end  --------------------------*/
+
+
+/*  9. news area start 
+--------------------------------------------------*/
+section.news-area {
+    padding: 100px 0;
+}
+
+.single-news .img-box {
+    position: relative;
+}
+
+.single-news .block-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: #33333391;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.single-news .block-box h4, .single-news .block-box h5 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.single-news .block-box h4 i, .single-news .block-box h5 i {
+    width: 25px;
+}
+
+section.news-area .single-news {
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section.news-area .single-news:hover .block-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-news .news-body {
+    padding: 20px;
+}
+
+.single-news .news-body h3 {
+    font-size: 20px;
+}
+
+.single-news .news-body ul {
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.single-news .news-body ul li {
+    width: 50%;
+    float: left;
+}
+
+.single-news .news-body ul a {
+    color: #8492A6;
+    margin: 0 5px 0 0;
+}
+
+.single-news .news-body ul a i {
+    margin: 0 7px 0 0;
+}
+
+.single-news .news-body ul li:last-child {
+    text-align: right;
+}
+
+.single-news .news-body ul li:last-child a {
+    text-transform: capitalize;
+}
+
+.single-news .news-body ul li:last-child a i {
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+}
+
+.single-news .news-body ul li a:hover {
+    color: #2f55d4;
+}
+
+.single-news .img-box {
+    height: 275px;
+    object-fit: cover;
+}
+/*  9. news area end  --------------------------*/
+
+
+/*  10. contact area start 
+--------------------------------------------------*/
+.contact-form {
+    box-shadow: 0 0 6px 1px #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-form label {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.contact-form label span {
+    color: #f00;
+}
+
+.contact-form .input-item {
+    margin: 0 0 20px;
+}
+
+.contact-form input-box {
+    position: relative;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    outline: none;
+    transition: .3s;
+}
+
+.contact-form .input-box i {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.contact-form .input-box {
+    position: relative;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border: 1px solid #2f55d4;
+}
+
+.contact-form h4 {
+    margin: 0 0 35px;
+}
+
+.map-area {
+    height: 100%;
+}
+
+.map-area iframe {
+    width: 100%;
+    height: 100%;
+}
+
+section.contace-area {
+    padding: 0 0 100px;
+}
+/*  10. contact area end  --------------------------*/
+
+
+
+/*  11. footer area start 
+--------------------------------------------------*/
+footer.footer-area {
+    background: #202942;
+    padding: 30px 0;
+}
+
+footer.footer-area .row {
+    align-items: center;
+}
+
+.copyright p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.copyright i {
+    color: #e82f2f;
+}
+
+.copyright a {
+    color: #2f55d4;
+}
+
+.copyright a:hover {
+    color: #003aff;
+}
+
+.footer-social ul {
+    margin: 0;
+    text-align: right;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social li a {
+    width: 40px;
+    line-height: 38px;
+    display: block;
+    border: 1px solid #2f55d4;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 17px;
+    transform: rotate(45deg);
+    color: #6c8af1;
+}
+
+.footer-social li a:hover i {
+    transform: rotate(-45deg);
+}
+
+.footer-social li a i {
+    transition: .3s;
+}
+/*  11. footer area end  --------------------------*/
+
